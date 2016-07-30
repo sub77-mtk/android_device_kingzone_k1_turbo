@@ -126,10 +126,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     FMRadio \
     libfmjni \
-    libfmmt6620 \
-    libfmmt6628 \
-    libfmmt6627 \
-    libfmmt6630 \
     libfmcust \
     libmtkplayer
 
@@ -140,10 +136,6 @@ PRODUCT_PACKAGES += \
 # Camera
 PRODUCT_PACKAGES += \
     Snap
-	
-# Set default player to AwesomePlayer
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.sys.media.use-awesome=true
 
 $(call inherit-product, build/target/product/full.mk)
 
