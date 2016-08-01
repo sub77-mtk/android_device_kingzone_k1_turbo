@@ -41,11 +41,6 @@ on init
     chown system media /dev/MJC
     chmod 0660 /dev/MJC
 
-    chown media media /dev/ccci_pcm_rx
-    chmod 0660 /dev/ccci_pcm_rx
-    chown media media /dev/ccci_pcm_tx
-    chmod 0660 /dev/ccci_pcm_tx
-
     chown bluetooth radio /dev/ttyGS2
     chmod 0660 /dev/ttyGS2
     chown system radio /dev/ttyGS3
