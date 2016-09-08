@@ -20,11 +20,11 @@ PRODUCT_PACKAGES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    lights.mt6592
+    lights.mt6582
 
 # Audio
 PRODUCT_PACKAGES += \
-    audio.primary.mt6592 \
+    audio.primary.mt6582 \
     audio_policy.default \
     audio.a2dp.default \
     audio.usb.default \
@@ -76,13 +76,13 @@ PRODUCT_COPY_FILES += \
 
 # Ramdisk
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/fstab.mt6592:root/fstab.mt6592 \
-    $(LOCAL_PATH)/rootdir/init.mt6592.rc:root/init.mt6592.rc \
+    $(LOCAL_PATH)/rootdir/fstab.mt6582:root/fstab.mt6582 \
+    $(LOCAL_PATH)/rootdir/init.mt6582.rc:root/init.mt6582.rc \
     $(LOCAL_PATH)/rootdir/init.modem.rc:root/init.modem.rc \
-    $(LOCAL_PATH)/rootdir/init.recovery.mt6592.rc:root/init.recovery.mt6592.rc \
-    $(LOCAL_PATH)/rootdir/init.mt6592.usb.rc:root/init.mt6592.usb.rc \
+    $(LOCAL_PATH)/rootdir/init.recovery.mt6582.rc:root/init.recovery.mt6582.rc \
+    $(LOCAL_PATH)/rootdir/init.mt6582.usb.rc:root/init.mt6582.usb.rc \
     $(LOCAL_PATH)/rootdir/twrp.fstab:recovery/root/etc/twrp.fstab \
-    $(LOCAL_PATH)/rootdir/ueventd.mt6592.rc:root/ueventd.mt6592.rc \
+    $(LOCAL_PATH)/rootdir/ueventd.mt6582.rc:root/ueventd.mt6582.rc \
     $(LOCAL_KERNEL):kernel
 
 # Permissions
@@ -147,7 +147,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 PRODUCT_NAME := full_k1_turbo
 PRODUCT_DEVICE := k1_turbo
 
-TARGET_SCREEN_HEIGHT := 1920
-TARGET_SCREEN_WIDTH := 1080
+TARGET_SCREEN_HEIGHT := 1280
+TARGET_SCREEN_WIDTH := 800
 
 $(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
